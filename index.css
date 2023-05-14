@@ -1,0 +1,322 @@
+body{
+    margin: 0px;
+}
+h1{
+    margin: 0px; /* removing default margin here*/
+}
+p{
+    margin: 0px; /* removing default margin here*/
+}
+
+.heading{
+    color: red;
+}
+ul{
+    padding: 0px;
+}
+li{
+    list-style-type: none;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin: auto;
+}
+.bgContainer{
+    max-width: 100%;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.orderContainer{
+    max-width: 100%;
+    margin: auto;
+    padding: 50px 0px 0px 0px;
+}
+.navBar{
+    background-color:#ffffff;
+    padding: 8px 8px 8px 8px;
+
+}
+.navBarImage{
+    border-radius: 10px;
+    width: 65px;
+}
+.ulContainer{
+    display: none;
+}
+
+.navItem{
+    font-family: "Roboto";
+    font-size: 22px;
+    color:#000;
+    letter-spacing: 4px;
+    font-weight: 700;
+    font-style: normal;
+}
+.navItem:last-child {
+    margin-right: 0px !important;
+}
+
+.bannerContainer{
+    background-image: url('https://res.cloudinary.com/dplj90agk/image/upload/v1684054880/img1_gpctui.jpg');
+    background-size: cover;
+    height: 100vh;
+}
+.contentContainer{
+    max-width: 600px;
+    background-color: rgba(245, 96, 213, 0.425);
+    padding: 8px;
+}
+
+.banner-title{
+    font-size: 38px;
+    color: #fff;
+    font-family: "Roboto";
+    letter-spacing: 3px;
+    line-height: 60px;
+    font-family: sans-serif;
+    margin-bottom: 15px;
+}
+.banner-desc{
+    font-size: 19px;
+    color: #fff;
+    font-family: "Roboto";
+    letter-spacing: 2px;
+    font-family: sans-serif;
+    line-height: 26px;
+}
+.orderTitle{
+    font-size: 40px;
+    text-align: center;
+    color: #fff;
+    font-family: "Roboto";
+    letter-spacing: 3px;
+    line-height: 60px;
+    font-family: sans-serif;
+    margin-bottom: 15px;
+}
+.gradientContainer{
+    background-image: linear-gradient(to right,#fa64d4,#f7c799,#fcee53 );
+    padding: 30px 0px 50px 0px;
+}
+.cardsContainer{
+    margin-top: 30px;
+    display: flex;
+    align-items:  center;
+    flex-wrap: wrap;
+    padding: 8px;
+}
+.itemCard{
+    background-color: #fff;
+    border-radius: 0px 40px 0px 50px;
+    padding: 20px;
+    max-width: 100%;
+    margin-bottom: 30px;
+    flex-grow: 1;
+    transition: transform .2s;
+    cursor: pointer;
+}
+.itemCard:hover{
+    transform: scale(1.04);
+}
+.itemTitle{
+    font-size: 20px;
+    text-align: center;
+    color: #000000;
+    font-family: "Roboto";
+    letter-spacing: 2px;
+    font-family: sans-serif;
+    margin: 20px 0px 20px 0px;
+}
+.itemDesc{
+    font-size: 16px;
+    text-align: center;
+    color: #000000;
+    font-family: "Roboto";
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-family: sans-serif;
+    padding: 5px 0px 5px 0px;
+}
+.foodStyles{
+    height: 250px;
+    width: 100%;
+    border-radius: 0px 50px 0px 0px;
+}
+.buttonContainer{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+.orderButton{
+    background-color: rgba(247, 186, 239, 0.473);
+    padding: 15px 50px 15px 50px;
+    border-radius: 30px;
+    border: none;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: #000000;
+    font-family: "Roboto";
+    font-family: sans-serif;
+    cursor: pointer;
+}
+.iconStyling{
+    margin-right: 20px;
+}
+.phoneIcon{
+    rotate: 240deg;
+   height: 32px;
+   width: 32px;
+   margin-right: 20px;
+}
+.iconContainer{
+    display: flex;
+    align-items: center;
+}
+  
+details > summary {
+list-style: none !important;
+}
+details > summary::-webkit-details-marker {
+display: none !important;
+}
+.detailsTag{
+    position: relative !important;
+}
+.mobileContainer{
+    position: absolute !important;
+    margin-top: 12px !important;
+    z-index: 10 !important;
+    right: 0px !important;
+    background-color: rgb(255, 255, 255);
+    padding: 15px
+}
+.mobile{
+    border-top: 1px solid red;
+}
+
+/* mobile device styles */
+@media screen and (min-width:576px) {
+    .container{
+        max-width: 540px !important;
+    }
+    .bgContainer{
+        max-width: 540px !important;
+        
+    }   
+    .orderContainer{
+        max-width: 540px !important;
+    }
+    .itemCard{
+        margin-bottom: 30px;
+    }
+}
+
+/* tab device styles  */
+@media screen and (min-width:768px) {
+    .container{
+        max-width: 720px !important;
+    }   
+    .bgContainer{
+        max-width: 720px !important;
+    }
+    .orderContainer{
+        max-width: 720px !important;
+    }
+    .cardsContainer{
+        justify-content: space-between !important; 
+        padding: 0px !important;
+    }
+    .itemCard{
+        max-width: 280px !important;
+        /* flex-grow: 0; */
+    }
+    .itemDesc{
+        font-size: 13px !important;
+    }
+    .contentContainer{
+        padding: 30px !important;
+    }
+    .banner-title{
+        font-size: 45px !important;
+    }
+}
+
+/* large device styles  */
+@media screen and (min-width:992px) {
+    .container{
+        max-width: 960px !important;
+    }   
+    .bgContainer{
+        max-width: 960px !important;
+    }
+    .orderContainer{
+        max-width: 960px !important;
+    }
+    .cardsContainer{
+        justify-content: space-between !important; 
+        padding: 0px !important;
+    }
+    .itemCard{
+        flex-grow: 0 !important;
+    }
+    .ulContainer{
+        display: block !important;
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+    }
+    .navItem{
+        font-size: 20px !important;
+        margin-right: 25px !important;
+    }
+    .hamburger{
+        display: none !important;
+    }
+    .detailsTag{
+        display: none !important;
+    }
+    
+}
+/* x-large device styles  */
+@media screen and (min-width:1200px) {
+    .container{
+        max-width: 1140px !important;
+    }   
+    .bgContainer{
+        max-width: 1140px !important;
+    }
+    .orderContainer{
+        max-width: 1140px !important;
+    }
+    .cardsContainer{
+        justify-content: space-between !important; 
+        padding: 0px !important;
+    }
+    .navItem{
+        font-size: 20px !important;
+        margin-right: 40px !important;
+    }
+}
+/* xxl-large device styles  */
+@media screen and (min-width:1400px) {
+    .container{
+        max-width: 1320px !important;
+    }   
+    .bgContainer{
+        max-width: 1320px !important;
+    }
+    .orderContainer{
+        max-width: 1320px !important;
+    }
+    .cardsContainer{
+        justify-content: space-between !important; 
+        padding: 0px !important;
+    }
+}
